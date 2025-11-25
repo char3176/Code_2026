@@ -48,7 +48,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
-import edu.wpi.first.units.measure.measure.Time;
+import edu.wpi.first.units.measure.Time;
 import com.team3176.robot.Constants;
 import com.team3176.robot.Constants.Mode;
 import com.team3176.robot.constants.BaseConstants;
