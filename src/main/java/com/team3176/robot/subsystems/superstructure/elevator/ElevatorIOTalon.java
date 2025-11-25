@@ -56,7 +56,7 @@ public class ElevatorIOTalon implements ElevatorIO {
         new TalonFX(Hardwaremap.elevatorRight_CID, Hardwaremap.elevatorRight_CBN);
     elevatorLeftLeader.getConfigurator().apply(configsLeft);
     elevatorRightFollower.getConfigurator().apply(configsLeft);
-    elevatorRightFollower.setControl(new Follower(elevatorLeftLeader.getDeviceID(), true));
+    //elevatorRightFollower.setControl(new Follower(elevatorLeftLeader.getDeviceID(), true));
     elevatorLeftLeader.setSafetyEnabled(false);
     // config setting
     configsLeft.Slot0.kP = 1; // An error of 0.5 rotations results in 1.2 volts output
