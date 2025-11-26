@@ -10,12 +10,17 @@ package com.team3176.robot.constants;
 import edu.wpi.first.wpilibj.RobotBase;
 import java.util.Map;
 
+import com.ctre.phoenix6.CANBus;
+
+
 public final class BaseConstants {
   private static final RobotType robot = RobotType.ROBOT_SIMBOT;
   public static final double LOOP_PERIODIC_SECS = 0.02;
   public static final boolean TUNING_MODE = true;
   public static final boolean VISION_CONNECTED = false;
   public static boolean invalidRobotAlertSent = false;
+
+  public static final CANBus rCANBus = new CANBus("rio");
 
   public static RobotType getRobot() {
     if (!disableHAL && RobotBase.isReal()) {

@@ -15,10 +15,13 @@ import com.ctre.phoenix6.controls.NeutralOut;
 import com.ctre.phoenix6.controls.PositionVoltage;
 import com.ctre.phoenix6.hardware.TalonFX;
 import com.ctre.phoenix6.signals.NeutralModeValue;
+import com.fasterxml.jackson.databind.JsonSerializable.Base;
+
 import edu.wpi.first.units.measure.Angle;
 import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Voltage;
 import edu.wpi.first.wpilibj.DigitalInput;
+import com.team3176.robot.constants.BaseConstants;
 import com.team3176.robot.constants.Hardwaremap;
 import com.team3176.robot.constants.SuperStructureConstants;
 import com.team3176.robot.subsystems.superstructure.elevator.ElevatorIO.ElevatorIOInputs;
@@ -51,9 +54,9 @@ public class ElevatorIOTalon implements ElevatorIO {
     voltPosition = new PositionVoltage(0);
     elevatortoplimitswitch = new DigitalInput(Hardwaremap.elevatorTopLimitSwitch_DIO);
     elevatorbotLimitswitch = new DigitalInput(Hardwaremap.elevatorBotLimitSwitch_DIO);
-    elevatorLeftLeader = new TalonFX(Hardwaremap.elevatorLeft_CID, Hardwaremap.elevatorLeft_CBN);
+    elevatorLeftLeader = new TalonFX(Hardwaremap.elevatorLeft_CID, BaseConstants.rCANBus.getName());
     elevatorRightFollower =
-        new TalonFX(Hardwaremap.elevatorRight_CID, Hardwaremap.elevatorRight_CBN);
+        new TalonFX(Hardwaremap.elevatorRight_CID, BaseConstants.rCANBus.getName());
     elevatorLeftLeader.getConfigurator().apply(configsLeft);
     elevatorRightFollower.getConfigurator().apply(configsLeft);
     //elevatorRightFollower.setControl(new Follower(elevatorLeftLeader.getDeviceID(), true));

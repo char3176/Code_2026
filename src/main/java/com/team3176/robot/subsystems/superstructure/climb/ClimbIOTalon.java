@@ -15,10 +15,13 @@ import com.ctre.phoenix6.controls.PositionVoltage;
 import com.ctre.phoenix6.hardware.TalonFX;
 import com.ctre.phoenix6.signals.InvertedValue;
 import com.ctre.phoenix6.signals.NeutralModeValue;
+import com.fasterxml.jackson.databind.JsonSerializable.Base;
+
 import edu.wpi.first.units.measure.Angle;
 import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Voltage;
 import edu.wpi.first.wpilibj.DigitalInput;
+import com.team3176.robot.constants.BaseConstants;
 import com.team3176.robot.constants.Hardwaremap;
 import com.team3176.robot.constants.SuperStructureConstants;
 import com.team3176.robot.util.TalonUtils;
@@ -39,7 +42,7 @@ public class ClimbIOTalon implements ClimbIO {
     configs = new TalonFXConfiguration();
     brake = new NeutralOut();
     voltPosition = new PositionVoltage(0);
-    climb = new TalonFX(Hardwaremap.climb_CID, Hardwaremap.climb_CBN);
+    climb = new TalonFX(Hardwaremap.climb_CID, BaseConstants.rCANBus.getName());
     // config setting
     configs.Slot0.kP = 2.4; // An error of 0.5 rotations results in 1.2 volts output
     configs.Slot0.kI = 0.0; // A change of 1 rotation per second results in 0.1 volts output

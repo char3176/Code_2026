@@ -19,6 +19,7 @@ import com.ctre.phoenix6.hardware.TalonFX;
 import com.ctre.phoenix6.hardware.CANcoder;
 import com.ctre.phoenix6.signals.InvertedValue;
 import com.ctre.phoenix6.signals.NeutralModeValue;
+import com.fasterxml.jackson.databind.JsonSerializable.Base;
 
 import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.math.geometry.Rotation2d;
@@ -29,6 +30,7 @@ import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Temperature;
 import edu.wpi.first.units.measure.Voltage;
 import edu.wpi.first.wpilibj.DigitalInput;
+import com.team3176.robot.constants.BaseConstants;
 import com.team3176.robot.constants.Hardwaremap;
 import com.team3176.robot.constants.SuperStructureConstants;
 import com.team3176.robot.util.TalonUtils;
@@ -60,7 +62,7 @@ public class ArmIOTalon implements ArmIO {
   //private LaserCan.Measurement measurement;
   public boolean hasCoral = false;
   private double coralDistance = 100; 
-  
+ 
 
   public ArmIOTalon() {
 
@@ -80,9 +82,9 @@ public class ArmIOTalon implements ArmIO {
 
     // rollerLinebreak = new DigitalInput(Hardwaremap.armRollerLinebreak_DIO);
     // pivotLinebreak = new DigitalInput(Hardwaremap.armPivotLinebreak_DIO);
-    pivotController = new TalonFX(Hardwaremap.armPivot_CID, Hardwaremap.armPivot_CBN);
+    pivotController = new TalonFX(Hardwaremap.armPivot_CID, BaseConstants.rCANBus.getName());
 
-    armPivotEncoder = new CANcoder(Hardwaremap.armCancoder_CID, Hardwaremap.armPivot_CBN);
+    armPivotEncoder = new CANcoder(Hardwaremap.armCancoder_CID, BaseConstants.rCANBus.getName());
     //private Rotation2d offset; 
 
     // Position w/ rollers touching back of Falcon at boot = 0.22

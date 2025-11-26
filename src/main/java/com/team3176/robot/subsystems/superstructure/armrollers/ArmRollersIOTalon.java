@@ -29,6 +29,7 @@ import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Temperature;
 import edu.wpi.first.units.measure.Voltage;
 import edu.wpi.first.wpilibj.DigitalInput;
+import com.team3176.robot.constants.BaseConstants;
 import com.team3176.robot.constants.Hardwaremap;
 import com.team3176.robot.constants.SuperStructureConstants;
 import com.team3176.robot.util.TalonUtils;
@@ -73,7 +74,7 @@ public class ArmRollersIOTalon implements ArmRollersIO {
 
     // rollerLinebreak = new DigitalInput(Hardwaremap.armRollerLinebreak_DIO);
     // pivotLinebreak = new DigitalInput(Hardwaremap.armPivotLinebreak_DIO);
-    rollerController = new TalonFX(Hardwaremap.armRoller_CID, Hardwaremap.armRoller_CBN);
+    rollerController = new TalonFX(Hardwaremap.armRoller_CID, BaseConstants.rCANBus.getName());
 
     rollerConfigs.MotorOutput.NeutralMode = NeutralModeValue.Brake;
 
