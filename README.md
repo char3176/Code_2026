@@ -22,7 +22,7 @@
 
 * Transfer the CANivore driver following these [instructions](https://docs.wpilib.org/en/stable/docs/software/roborio-info/roborio-ftp.html)
 
-* SSH into your RoboRIO
+* SSH into your RoboRIO to install the CANivore driver file
     * Open Windows powershell
     * Connect the usb cable between your computer and the RoboRIO
     * In the powershell type ```ssh lvuser@172.22.11.2```.  If asked for a password just hit the "ENTER" key.
