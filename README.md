@@ -1,7 +1,6 @@
 # Robot Code for 2026 REBUILT FRC Game & Season
 
 ## How to use this code
-
 -Install [NI Game Tools 2026 Beta 1][ https://github.com/wpilibsuite/2026Beta/releases/tag/NI_GAME_TOOLS_BETA_1]
 -Install [WPILib Beta 1][https://github.com/wpilibsuite/allwpilib/releases/tag/v2026.1.1-beta-1]
 -Image your RoboRIO 2 using these [instructions][https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-3/roborio2-imaging.html]
