@@ -1,8 +1,8 @@
 # Robot Code for 2026 REBUILT FRC Game & Season
 
 ## How to use this code
-    ### Setup and Installs (Getting started)
-    * Install [NI Game Tools 2026 Beta 1]( https://github.com/wpilibsuite/2026Beta/releases/tag/NI_GAME_TOOLS_BETA_1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/frc-game-tools.html)
+### Setup and Installs (Getting started)
+* Install [NI Game Tools 2026 Beta 1]( https://github.com/wpilibsuite/2026Beta/releases/tag/NI_GAME_TOOLS_BETA_1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/frc-game-tools.html)
 
 * Install [WPILib Beta 1](https://github.com/wpilibsuite/allwpilib/releases/tag/v2026.1.1-beta-1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html)
 
