@@ -20,15 +20,15 @@
 
 * Download the CANivore driver [here](https://ctre.download/files/canivore-usb-kernel_1.16_armv7a.ipk)
 
-* Transfer the CANivore driver following these [instructions](https://docs.wpilib.org/en/stable/docs/software/roborio-info/roborio-ftp.html) as also listed below
+* Transfer the CANivore driver following these [instructions](https://docs.wpilib.org/en/stable/docs/software/roborio-info/roborio-ftp.html)
 
-    * SSH into your RoboRIO to install the CANivore driver file
-        * Open Windows powershell
-        * Connect the usb cable between your computer and the RoboRIO
-        * In the powershell type ```ssh lvuser@172.22.11.2```.  If asked for a password just hit the "ENTER" key.
-        * Verify the CANivore driver file that you uploaded is present by typing ```ls``` and then the "ENTER" key.
-        * Install the CANivore driver by typing the following command ```opkg install canivore-usb-kernel_1.16_armv7a.ipk``` and then the "ENTER" key.
-        * Reboot the roboRIO (CANivore status light should now be blinking GREEN).
+* Connect to the RoboRIO and install the CANivore driver file you just transferred, via the below procedure:
+    * Open Windows powershell
+    * Connect the usb cable between your computer and the RoboRIO
+    * In the powershell type ```ssh lvuser@172.22.11.2```.  If asked for a password just hit the "ENTER" key.
+    * Verify the CANivore driver file that you uploaded is present by typing ```ls``` and then the "ENTER" key.
+    * Install the CANivore driver by typing the following command ```opkg install canivore-usb-kernel_1.16_armv7a.ipk``` and then the "ENTER" key.
+    * Reboot the roboRIO (CANivore status light should now be blinking GREEN).
 
 * Install [GitKraken Desktop](https://www.gitkraken.com/)
 
