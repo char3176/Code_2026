@@ -2,15 +2,15 @@
 
 ## How to use this code
 ### Setup and Installs (Getting started)
-    - Install [NI Game Tools 2026 Beta 1]( https://github.com/wpilibsuite/2026Beta/releases/tag/NI_GAME_TOOLS_BETA_1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/frc-game-tools.html)
+* Install [NI Game Tools 2026 Beta 1]( https://github.com/wpilibsuite/2026Beta/releases/tag/NI_GAME_TOOLS_BETA_1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/frc-game-tools.html)
 
-    - Install [WPILib Beta 1](https://github.com/wpilibsuite/allwpilib/releases/tag/v2026.1.1-beta-1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html)
+* Install [WPILib Beta 1](https://github.com/wpilibsuite/allwpilib/releases/tag/v2026.1.1-beta-1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html)
 
-    - Image your RoboRIO 2 using these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-3/roborio2-imaging.html)
+* Image your RoboRIO 2 using these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-3/roborio2-imaging.html)
 
-    - Program your VH-109 FRC Radio using these [instruction](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-3/radio-programming.html)
+* Program your VH-109 FRC Radio using these [instruction](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-3/radio-programming.html)
 
-    - Install [Pathplanner v2025.2.2](https://github.com/mjansen4857/pathplanner/releases/tag/v2025.2.2)
+* Install [Pathplanner v2025.2.2](https://github.com/mjansen4857/pathplanner/releases/tag/v2025.2.2)
 
 * Install [CTRE Phoenix Tuner X application](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html) from this [Microsoft Store link](https://apps.microsoft.com/detail/9NVV4PWDW27Z)
 
