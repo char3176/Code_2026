@@ -2,8 +2,7 @@
 
 ## How to use this code
 ### WARNINGS
-* [!NOTE]
-Do NOT attempt to execute ANY command involving the elevator.  You risk mechanically breaking the robot if you do so.
+\textsf{color(red) Do NOT attempt to execute ANY command involving the elevator.  You risk mechanically breaking the robot if you do so)$
 
 ### Setup and Installs (Getting started)
 * Install [NI Game Tools 2026 Beta 1]( https://github.com/wpilibsuite/2026Beta/releases/tag/NI_GAME_TOOLS_BETA_1) following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/frc-game-tools.html)
