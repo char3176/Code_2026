@@ -18,6 +18,18 @@
 
 * Upgrade the firmware on all CTRE devices following these instructions for a ["Batch Field Upgrade"](https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/device-list.html#batch-field-upgrade)
 
+* Download the CANivore driver [here](https://ctre.download/files/canivore-usb-kernel_1.16_armv7a.ipk)
+
+* Transfer the CANivore driver following these [instructions](https://docs.wpilib.org/en/stable/docs/software/roborio-info/roborio-ftp.html)
+
+* SSH into your RoboRIO
+    * Open Windows powershell
+    * Connect the usb cable between your computer and the RoboRIO
+    * In the powershell type "ssh lvuser@172.22.11.2".  If asked for a password just hit the "<ENTER>" key.
+    * Verify the CANivore driver file that you uploaded is present by typing "ls" and then the "<ENTER>" key.
+    * Install the CANivore driver by typing the following command "opkg install canivore-usb-kernel_1.16_armv7a.ipk" and then the "<ENTER>" key.
+    * Reboot the roboRIO (CANivore status light should now be blinking GREEN).
+
 * Install [GitKraken Desktop](https://www.gitkraken.com/)
 
 * Clone this repo following this [example](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/#clone-a-project) but using this [repo URL](https://github.com/char3176/Code_2026)
