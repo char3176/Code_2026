@@ -20,11 +20,18 @@
 
 * Install [GitKraken Desktop](https://www.gitkraken.com/)
 
-* Clone this repo following thise [example](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/#clone-a-project) but using this [URL](https://github.com/char3176/Code_2026)
+* Clone this repo following this [example](https://help.gitkraken.com/gitkraken-desktop/open-clone-init/#clone-a-project) but using this [repo URL](https://github.com/char3176/Code_2026)
 
 * Setup your Driverstation following these [instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-4/running-test-program.html)
 
 * Install [Elastic](https://frc-elastic.gitbook.io/docs) from this [link to Elastic 2026.0.0 Beta 1](https://github.com/Gold872/elastic-dashboard/releases/tag/v2026.0.0-beta-1)
+
+* Connnect your computer to the robot via either usb or wireless and then "Build & Deploy" your code using the following [example](https://docs.wpilib.org/en/latest/docs/software/vscode-overview/deploying-robot-code.html)
+
+
+
+If you have questions or issues, I can be reached via char3176@gmail or on discord @charfxn
+
 
  
 
